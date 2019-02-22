@@ -11,7 +11,11 @@ const serverConfig = {
         {
             source: '/maoyan', // 暗号
             target: 'https://api.zcool.com.cn/', // 真正的目标
-        }
+        },
+        {
+            source: '/zhanku',
+             target: 'https://m.zcool.com.cn'
+            }
     ]
 }
 

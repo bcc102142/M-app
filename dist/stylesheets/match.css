@@ -178,7 +178,12 @@ th {
   padding: 0; }
 
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+ul, li {
+  list-style: none; }
 
 body {
   margin: 0;

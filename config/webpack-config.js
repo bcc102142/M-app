@@ -5,7 +5,9 @@ const webpackConfig = {
     entry: { // 入口
         index: path.join(__dirname, '../src/javascripts/index.js'),
         activity: path.join(__dirname, '../src/javascripts/activity.js'),
-        match: path.join(__dirname, '../src/javascripts/match.js')
+        match: path.join(__dirname, '../src/javascripts/match.js'),
+        jobs: path.join(__dirname, '../src/javascripts/jobs.js')
+
     },
     output: { // 出口
         filename: '[name].js' // 如果配置的什么名字，就输出什么名字

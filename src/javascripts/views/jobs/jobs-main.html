@@ -1,0 +1,58 @@
+<!-- 中间内容区域  开始 -->
+<main class="app-main">
+    <div class="main-item_search">
+        <div class="main-item_search-city">
+            <span>北京</span>
+            <i></i>
+        </div>
+        <div class="main-item_search-searchBox">
+            <i></i>
+            <span>搜索职位或公司</span>
+        </div>
+    </div>
+    <!-- 热门职位  开始 -->
+    <div class="main-item_hot">
+        <div class="main-citiesSimple">
+            <div class="main-citiesSimple_name">
+                <p>当前城市</p>
+                <ul>
+                    <li class="main-citiesSimple_name-active">北京</li>
+                </ul>
+            </div>
+            <div class="main-citiesSimple_name">
+                <p>其他城市</p>
+                <ul>
+                    <li>上海</li>
+                    <li>广州</li>
+                    <li>深圳</li>
+                    <li>杭州</li>
+                    <li>全国</li>
+                    <li>其他城市</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-item_hot-title">
+            <span></span>
+            <p>热门职位</p>
+            <span></span>
+        </div>
+        {{#each data}}
+        <div class="main-item_hot-jobs">
+            <div class="main-item_hot-jobs-img">
+                <img src="{{logo}}"" alt="">
+                </div>
+                <div  class=" main-item_hot-jobs-info">
+                <div>{{post_name}}</div>
+                <div>
+                    <p>{{name_ltd}}</p><span>{{post_salary}}</span>
+                </div>
+                <div> </div>
+                <div>
+                    <p>北京&nbsp;|&nbsp;{{experience_name}}&nbsp;|&nbsp;{{diploma_name}}</p><span>{{publishTime}}</span>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</main>
+<!-- 中间内容区域  结束 -->
