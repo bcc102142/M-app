@@ -1,0 +1,455 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden],
+template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+/*主题部分*/
+#main {
+  width: 100%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin-top: .8rem;
+  overflow: auto; }
+
+.main-title {
+  width: 100%;
+  height: .746667rem;
+  padding: 0 .4rem;
+  font-size: .64rem;
+  color: #333333;
+  margin-bottom: .4rem; }
+
+.main-item {
+  padding: .266667rem .4rem;
+  width: 100%;
+  height: 3.733333rem;
+  background: white; }
+
+.main-item img {
+  width: 4.213333rem;
+  height: 3.2rem;
+  border-radius: 5px; }
+
+.main-item-right {
+  width: 4.96rem;
+  height: 3.2rem;
+  padding: 10px 0 10px 10px;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.main-item-right span {
+  color: #999999; }
+
+.main-item-right-top {
+  font-size: .426667rem;
+  font-weight: bold;
+  color: #333; }
+
+.main-more {
+  height: .986667rem;
+  width: 4.67rem;
+  display: block;
+  text-align: center;
+  border: .03rem solid #666666;
+  color: #666666;
+  line-height: .986667rem;
+  border-radius: .11rem;
+  margin: 0 auto;
+  margin-bottom: .533333rem; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background: white; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  color: #333;
+  text-decoration: none; }
+
+html, body, #app {
+  height: 100%; }
+
+#header {
+  width: 100%;
+  height: 1.333333rem;
+  padding: 0 .4rem;
+  background: #FFD100;
+  font-size: .48rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#app-header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+#app-header a img {
+  height: .48rem;
+  width: 2.666667rem; }
+
+.header-right {
+  width: 3.2rem;
+  height: .64rem; }
+
+.header-right-button {
+  width: 2.08rem;
+  height: .64rem;
+  border: 1px solid #000;
+  border-radius: 5px;
+  text-align: center;
+  font-size: .32rem;
+  line-height: .57rem;
+  display: block; }
+
+#app-header .header-right-nav {
+  position: relative;
+  left: 2.666667rem;
+  top: -1px; }
+
+#app-header .header-right-nav .header-right-nav-img {
+  width: .64rem;
+  height: .64rem;
+  position: absolute;
+  top: -0.613333rem; }
+
+.header-right-nav-son {
+  position: absolute;
+  background: white;
+  height: 3.12rem;
+  width: 10rem;
+  left: -9.066667rem;
+  top: .346667rem;
+  z-index: 1;
+  display: none;
+  transition: all 1s; }
+
+.header-right-nav-son div:nth-of-type(1) {
+  position: relative;
+  border-bottom: 1px solid #eeeeee;
+  width: 9.066667rem;
+  height: 1.28rem;
+  padding: .4rem .4rem;
+  margin-left: .4rem; }
+
+#app-header .header-right .header-right-nav-son div:nth-of-type(1) img {
+  width: .426667rem;
+  height: .426667rem;
+  position: absolute;
+  left: .4rem;
+  top: .4rem; }
+
+#app-header .header-right .header-right-nav-son div:nth-of-type(1) p {
+  font-size: .373333rem;
+  margin: 0;
+  position: absolute;
+  top: .346667rem;
+  left: 1.013333rem; }
+
+.header-right-nav-son div:nth-of-type(2) {
+  position: relative;
+  border-bottom: 1px solid #eeeeee;
+  width: 9.066667rem;
+  height: 1.28rem;
+  padding: .4rem .4rem;
+  margin-left: .4rem; }
+
+#app-header .header-right .header-right-nav-son div:nth-of-type(2) img {
+  width: .426667rem;
+  height: .426667rem;
+  position: absolute;
+  left: .4rem;
+  top: .4rem; }
+
+#app-header .header-right .header-right-nav-son div:nth-of-type(2) p {
+  font-size: .373333rem;
+  margin: 0;
+  position: absolute;
+  top: .346667rem;
+  left: 1.013333rem; }
+
+.header-right-nav-son div:nth-of-type(2) p span {
+  padding: 0 5px; }
+
+/*四个导航部分*/
+#nav {
+  width: 8.933333rem;
+  height: 2.346667rem;
+  margin-left: .506667rem;
+  margin-top: .533333rem;
+  background: white;
+  /*border: 1px solid #666666;*/
+  border-radius: 5px;
+  box-shadow: 0 0 3px 3px #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nav-item {
+  padding: .533333rem;
+  padding-bottom: 12px;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+
+/*四个导航部分*/
+#nav {
+  width: 8.933333rem;
+  height: 2.346667rem;
+  margin-left: .506667rem;
+  margin-top: .533333rem;
+  background: white;
+  /*border: 1px solid #666666;*/
+  border-radius: 5px;
+  box-shadow: 0 0 3px 3px #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.nav-item {
+  padding: .533333rem .4rem .533333rem .4rem;
+  padding-bottom: .32rem;
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around; }
+
+/*底部部分*/
+#footer {
+  width: 100%;
+  height: 6.56rem;
+  background: url(https://static.zcool.cn/zcool/mobile/images/footer-background.png);
+  background-size: 10rem 6.56rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.footer-logo img {
+  margin-top: .8rem;
+  height: .48rem;
+  width: 2.666667rem; }
+
+.footer-text {
+  font-size: .506667rem;
+  margin: 0;
+  margin-top: .906667rem; }
+
+.download-app {
+  width: 3.6rem;
+  height: 1.066667rem;
+  border: 1px solid #282828;
+  border-radius: .506667rem;
+  text-align: center;
+  line-height: 1.066667rem;
+  font-size: .426667rem;
+  margin-top: .4rem; }
+
+.footer-copyRight {
+  font-size: .27rem;
+  margin-top: 1.49rem; }
+
+.fixedButton {
+  width: 3.6rem;
+  height: 1.066667rem;
+  background: #ffd720;
+  border-radius: .506667rem;
+  text-align: center;
+  line-height: 1.066667rem;
+  font-size: .426667rem;
+  position: fixed;
+  margin: auto;
+  left: 0;
+  box-shadow: 0 0.11rem 0.16rem 0 rgba(215, 188, 66, 0.39);
+  right: 0;
+  bottom: .8rem;
+  display: block; }

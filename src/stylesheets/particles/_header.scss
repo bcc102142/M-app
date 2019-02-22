@@ -1,0 +1,132 @@
+   body { margin: 0; padding: 0; background: white; }
+        * { box-sizing: border-box; }
+        a { color: #333; text-decoration: none; }
+        html, body, #app { height: 100%; }
+        #header {
+            width: 100%;
+            height: 1.333333rem;
+            padding: 0 .4rem;
+            background: #FFD100;
+            font-size: .48rem;
+            color: #fff;display: flex;justify-content: center;align-items: center;}
+        #app-header{
+            width: 100%;
+            height: 100%;
+            display: flex;justify-content: space-between;align-items: center;
+        }
+
+
+        #app-header a img {
+            height:.48rem;
+            width: 2.666667rem
+        }
+        .header-right{
+            width: 3.2rem;
+            height: .64rem;
+        }
+        .header-right-button{
+            width: 2.08rem;
+            height: .64rem;
+            border: 1px solid #000;
+            border-radius:5px;
+            text-align: center;
+            font-size: .32rem;
+            line-height: .57rem;
+            display: block
+        }
+        #app-header .header-right-nav{
+            position: relative;
+            left: 2.666667rem;
+            top: -1px;
+        }
+        #app-header .header-right-nav .header-right-nav-img{
+            width: .64rem;
+            height: .64rem;
+            position: absolute;
+            top: -0.613333rem;
+
+        }
+        .header-right-nav-son{
+            position: absolute;
+            background: white;
+            height: 3.12rem;
+            width: 10rem;
+            left: -9.066667rem;
+            top: .346667rem;
+            z-index: 1;
+            display: none;
+            transition: all 1s;
+        }
+        .header-right-nav-son div:nth-of-type(1) {
+            position: relative;
+            border-bottom: 1px solid #eeeeee;
+
+            width: 9.066667rem;
+            height: 1.28rem;
+            padding: .4rem .4rem;
+            margin-left: .4rem;
+        }
+        #app-header .header-right .header-right-nav-son div:nth-of-type(1) img{
+            width: .426667rem;
+            height: .426667rem;
+            position: absolute;
+            left: .4rem;
+            top: .4rem;
+        }
+        #app-header .header-right .header-right-nav-son div:nth-of-type(1) p{
+            font-size: .373333rem;
+            margin: 0;
+            position: absolute;
+            top: .346667rem;
+            left: 1.013333rem;
+        }
+        .header-right-nav-son div:nth-of-type(2) {
+            position: relative;
+            border-bottom: 1px solid #eeeeee;
+
+            width: 9.066667rem;
+            height: 1.28rem;
+            padding: .4rem .4rem;
+            margin-left: .4rem;
+        }
+        #app-header .header-right .header-right-nav-son div:nth-of-type(2) img{
+            width: .426667rem;
+            height: .426667rem;
+            position: absolute;
+            left: .4rem;
+            top: .4rem;
+        }
+        #app-header .header-right .header-right-nav-son div:nth-of-type(2) p{
+            font-size: .373333rem;
+            margin: 0;
+            position: absolute;
+            top: .346667rem;
+            left: 1.013333rem;
+        }
+        .header-right-nav-son div:nth-of-type(2) p span{
+            padding: 0 5px;
+        }
+        /*四个导航部分*/
+        #nav{
+            width: 8.933333rem;
+            height:2.346667rem;
+            margin-left: .506667rem;
+            margin-top: .533333rem;
+            background: white;
+            /*border: 1px solid #666666;*/
+            border-radius: 5px ;
+            box-shadow: 0 0 3px 3px #eeeeee ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nav-item{
+            padding: .533333rem;
+            padding-bottom: 12px;
+            flex-grow: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }

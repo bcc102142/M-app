@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="src/static/javascripts/zepto.min.js"></script>
+    <script src="src/static/javascripts/flexible.js"></script>
+    <title>活动-站酷</title>
+    <style>
+        body { margin: 0; padding: 0; background: white; }
+        * { box-sizing: border-box; }
+        a { color: #333; text-decoration: none; }
+        li{
+            list-style: none;
+        }
+        html, body, #app { height: 100%; }
+        #header {
+            width: 100%;
+            height: 50px;
+            padding: 0 15px;
+            background: #FFD100;
+            font-size: 18px;
+            color: #fff;display: flex;justify-content: center;align-items: center;
+           
+        }
+        #app-header{
+            width: 100%;
+            height: 100%;
+            display: flex;justify-content: space-between;align-items: center;
+            
+        }
+
+
+        #app-header a img {
+            height:.48rem;
+            width: 2.666667rem
+        }
+        .header-right{
+            width: 3.2rem;
+            height: 24px;
+            
+        }
+        .header-right-button{
+            width: 2.08rem;
+            height: .64rem;
+            border: 1px solid #000;
+            border-radius:5px;
+            text-align: center;
+            font-size: .32rem;
+            line-height: .57rem;
+            display: block
+        }
+        #app-header .header-right-nav{
+            position: relative;
+            left: 2.666667rem;
+            top: -1px;
+        }
+        #app-header .header-right-nav img{
+            width: .64rem;
+            height: .64rem;
+            position: absolute;
+            top: -23px;
+          
+
+        }
+        /* .header-right-nav-mask{
+            position: absolute;
+            background: transparent;
+            height: 50px;
+            width: 10rem;
+            left: -340px;
+            top: -36px;
+            z-index: 2;
+            display: block;
+        } */
+        .header-right-nav-son{
+            position: absolute;
+            background: white;
+            height: 160px;
+            width: 10rem;
+            left: -340px;
+            top: -140px;
+            z-index: 1;
+            /* opacity: 0; */
+            /* display: none; */
+            transition: all 1s;
+        }
+        .header-right-nav-son div:nth-of-type(1) {
+            position: relative;
+            border-bottom: 1px solid #eeeeee;
+
+            width: 340px;
+            height: 48px;
+            padding: 15px 15px;
+            margin-left: 15px;
+        }
+        #app-header .header-right .header-right-nav-son div:nth-of-type(1) img{
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+        #app-header .header-right .header-right-nav-son div:nth-of-type(1) p{
+            font-size: 14px;
+            margin: 0;
+            position: absolute;
+            top: 13px;
+            left: 38px;
+        }
+        .header-right-nav-son div:nth-of-type(2) {
+            position: relative;
+            border-bottom: 1px solid #eeeeee;
+
+            width: 340px;
+            height: 48px;
+            padding: 15px 15px;
+            margin-left: 15px;
+        }
+        #app-header .header-right .header-right-nav-son div:nth-of-type(2) img{
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+        #app-header .header-right .header-right-nav-son div:nth-of-type(2) p{
+            font-size: 14px;
+            margin: 0;
+            position: absolute;
+            top: 13px;
+            left: 38px;
+        }
+        .header-right-nav-son div:nth-of-type(2) p span{
+            padding: 0 5px;
+        }
+        .header-right-nav-son div:nth-of-type(3) {
+            position: relative;
+            border-bottom: 1px solid #eeeeee;
+
+            width: 340px;
+            height: 48px;
+            padding: 15px 15px;
+            margin-left: 15px;
+        }
+        #app-header .header-right .header-right-nav-son div:nth-of-type(3) img{
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 15px;
+            top: 15px;
+        }
+        #app-header .header-right .header-right-nav-son div:nth-of-type(3) p{
+            font-size: 14px;
+            margin: 0;
+            position: absolute;
+            top: 13px;
+            left: 38px;
+        }
+        .header-right-nav-son div:nth-of-type(3) p span{
+            padding: 0 5px;
+        }
+
+
+        /*主题部分*/
+        #main{
+
+            width: 100%;
+            flex-grow: 1; flex-shrink: 1;
+            overflow: auto;
+            background: #eeeeee;
+        }
+
+        .main-item{
+            padding: 10px 15px;
+            width: 100%;
+            height: 140px;
+            background: #eeeeee;
+        }
+        .main-item img{
+            width: 158px;
+            height: 120px;
+            border-radius: 5px;
+        }
+        .main-item-right{
+            width:186px;
+            height: 120px;
+            padding: 10px 0 10px 10px ;
+            float: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background: white;
+
+        }
+        .main-item-right span{
+            color: rgb(153, 153, 153);
+        }
+        .main-item-right-top{
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+        .main-more{
+            height: 38px;
+            width: 355px;
+            display: block;
+            text-align: center;
+            background: white;
+            color: #666666;
+            line-height: 38px;
+            border-radius: .11rem;
+            margin: 10px;
+
+        }
+        /*底部部分*/
+        #footer{
+            width: 100%;
+            height: 61px;
+
+        }
+        .footer-bottom{
+            width: 100%;
+            height: 97px;
+            padding: 22px 10px;
+            background: #f9f9f9;
+        }
+        .footer-bottom ul{
+            width: 150px;
+            height: 16px;
+            padding: 0;
+            margin: 0;
+        }
+        .footer-bottom ul li{
+            float: left;
+            padding: 0 3px;
+        }
+        .footer-bottom ul:nth-of-type(2) li{
+            float: right;
+            padding: 0 3px;
+        }
+        .footer-bottom ul:nth-of-type(2) li a{
+           color: #999999;
+        }
+        .footer-bottom ul:nth-of-type(1){
+            float: left;
+        }
+        .footer-bottom ul:nth-of-type(2){
+            float: right;
+        }
+        .Copyright{
+            text-align: center;
+            color: #999999;
+            font-size: 13px;
+            margin-top: 26px;
+            /*border-top: 1px solid #333333;*/
+        }
+        .Copyright:before{
+            content: "";
+            position: absolute;
+            height: 1px;
+            background: #eeeeee;
+            width: 100%;
+            transform: scale(1,0.5);
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <!--固定定位按钮-->
+
+    <div id="header">
+        <header id="app-header">
+            <div class="header-left">
+                <a href="#">
+                    <img src="//static.zcool.cn/git_z/z/common/images/svg/logo.svg" alt="">
+                </a>
+            </div>
+
+            <div class="header-right">
+                <a href="#" class="header-right-button">下载App</a>
+                <a href="#" class="header-right-nav">
+                    <img src="src/static/images/菜单.png" class="header-right-nav-img" alt="">
+                    <div class="header-right-nav-mask"></div>
+                    <div class="header-right-nav-son">
+                        <div>
+                            <img src="https://static.zcool.cn/zcool/mobile/images/svg/search.svg">
+                            <p>搜索</p>
+                        </div>
+                        <div>
+                            <img src="https://static.zcool.cn/zcool/mobile/images/svg/back.svg">
+                            <p>返回首页</p>
+                        </div>
+                        <div>
+                            <img src="https://static.zcool.cn/zcool/mobile/images/svg/login.svg">
+                            <p>登陆<span>/</span>注册</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </header>
+
+
+    </div>
+
+    <div id="main">
+        <!--需要循环的-->
+        <div class="main-item">
+            <img src="https://img.zcool.cn/community/01c82a5bfa0a23a8012092521a3d96.jpg@260w_195h_1c_1e_1o_100sh.jpg" />
+            <div class="main-item-right">
+                <div class="main-item-right-top">title</div>
+                <div class="main-item-right-bottom">
+                    <div style="color: #333333">auther</div>
+                    <div style="color: #333333;margin-top: 4px ">
+                        <span style="margin-right:14px">
+                            <svg width=".45rem" height=".35rem" viewBox="0 0 16 13"><g fill="none" fill-rule="evenodd"><g transform="translate(1 2)" stroke="#C1C1C1" stroke-width="1.5"><path d="M13.19 5A6.642 6.642 0 0 0 .799 5 6.642 6.642 0 0 0 13.19 5z"></path><circle cx="7" cy="5" r="1.75"></circle></g><path d="M0 0h16v13H0z"></path></g></svg>
+                            363
+                        </span>
+                        <span>
+                            <svg width=".45rem" height=".35rem" viewBox="0 0 16 13"><g fill="none" fill-rule="evenodd"><path d="M0 0h16v13H0z"></path><g stroke="#C1C1C1" stroke-width="1.5"><path d="M8.001 2.928l.685-1.21a1.39 1.39 0 0 1 1.92-.525c.673.396.903 1.274.515 1.96l-.45.794a.238.238 0 0 0 .208.355h1.715c.777 0 1.406.643 1.406 1.435 0 .095-.01.19-.027.282l-.844 3.827A1.413 1.413 0 0 1 11.751 11H3.937A.947.947 0 0 1 3 10.043V5.26c0-.528.42-.957.937-.957h1.71c.974 0 1.874-.525 2.354-1.374z"></path><path d="M6 4.81v5.714" stroke-linecap="round"></path></g></g></svg>
+                            37
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        
+
+
+        <div class="main-more">查看更多</div>
+
+    </div>
+
+    <div id="footer">
+        <a class="footer-top">
+            <img src="https://static.zcool.cn/v3.5.20190116010519.5/zcool/client/image/down-app2.png" width="100%" style="display:block">
+        </a>
+        <div class="footer-bottom">
+            <ul>
+                <li><a href="#" style="color: #999">触屏版</a></li>
+                <li><a href="#" style="border-left: 1px solid #999;padding-left: 6px">电脑版</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" >回顶部</a></li>
+                <li><a href="#" style="padding-right: 8px;border-right: 1px solid #999">反馈</a></li>
+            </ul>
+            <div class="Copyright">Copyright© 2006 - 2019 ZCOOL</div>
+
+        </div>
+</div>
+
+<script>
+   
+    let bool = false;
+    $(".header-right-nav").on("click",function (e) {
+        bool=!bool;
+        if(bool){
+            $('.header-right-nav-img').attr("src","src/static/images/关闭.png")
+         
+            $(".header-right-nav-son").animate({
+            top:'13px',
+        }, 500)
+        }else{
+            $('.header-right-nav-img').attr("src","src/static/images/菜单.png")
+            $(".header-right-nav-son").animate({
+            top:'-130px',
+        }, 500)
+        }
+    })
+    $(".header-right-nav-son").animate({
+            top:'13px',
+        }, 500)
+
+    //动画测试
+
+
+
+</script>
+</body>
+</html>
