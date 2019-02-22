@@ -8,7 +8,7 @@ let clickBool=false;
 
 const render = () => {
     $('#header').append(jobsHeader);
-
+    init();
 }
 function init() {
     let headerIcon = document.querySelector('.header-icon');
@@ -37,6 +37,5 @@ function clickHandler(e) {
 
 }
 module.exports = {
-    render,
-    init
+    render
 }

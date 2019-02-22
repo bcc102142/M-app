@@ -13,6 +13,7 @@ const render = async () => {
     let res = JSON.parse(resoultList);
     let template = Handlebars.compile(jobsMain);
     $('#main').append(template({ data: res.data.data }));
+    init();
 }
 function init() {
     $('.main-item_search-city').on('click',()=>{
@@ -35,6 +36,5 @@ function init() {
     })
 };
 module.exports = {
-    render,
-    init
+    render
 }

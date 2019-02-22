@@ -6,11 +6,7 @@ const jobsMain = require("./jobsMain-controller");
 const render = () => {
     $('#footer').append(jobsFooter);
     jobsHeader.render();
-    jobsHeader.init();
     jobsMain.render();
-    setTimeout(function () {
-        jobsMain.init();
-    }, 200)
 }
 
 
