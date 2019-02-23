@@ -185,6 +185,9 @@ th {
 ul, li {
   list-style: none; }
 
+a {
+  text-decoration: none; }
+
 /*主题部分*/
 #main {
   width: 100%;
