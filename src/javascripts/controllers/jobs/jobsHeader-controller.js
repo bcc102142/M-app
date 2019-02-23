@@ -13,11 +13,12 @@ const render = () => {
 function init() {
     let headerIcon = document.querySelector('.header-icon');
     headerIcon.addEventListener("click", clickHandler, true);
-    $('#app').on('click', () => {
-        $('#app').removeClass('app-move');
-        $('.header-icon i').removeClass('clickIcon');
-        clickBool = !clickBool;
-    });
+    // $('#app').on('click', (e) => {
+    //     $('#app').removeClass('app-move');
+    //     $('.header-icon i').removeClass('clickIcon');
+    //     clickBool = !clickBool;
+    // });
+
 }
 
 function clickHandler(e) {
@@ -31,7 +32,10 @@ function clickHandler(e) {
     } else {
         $('#app').removeClass('app-move');
         $('.header-icon i').removeClass('clickIcon');
-
+       setTimeout(()=>{
+        $('#app-aside').hide();
+       },500)
+      
     }
     clickBool=!clickBool;
 

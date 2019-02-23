@@ -27,7 +27,7 @@ a{
 }
 #header{
     width:100%;
-    height: 1.093333rem;
+    height: 2.4rem;
     flex-shrink: 0;
     font-size: 0;
 }
@@ -52,12 +52,17 @@ a{
     display: flex;
     flex-direction: column;
 }
+
 // 头部开始
 .app-header{
     height:100%;
-    display: flex;
     background: #ffd101;
-    div{
+    position: relative;
+    .app-header_top{
+        height: 1.066667rem;
+        display: flex;
+    }
+    .flex-div{
         flex:1;
     }
     .header-icon{
@@ -85,11 +90,13 @@ a{
     background-image:url("/static/images/header-clickIcon.png");
 }
 // 中间部分开始
-
+      
 .main-item_search{
     width:100%;
     padding:0 .533333rem;
     height:1.333333rem;
+    position: absolute;
+    bottom:0;
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -140,6 +147,7 @@ a{
 
 .main-item_hot{
     width:100%;
+    height:100%;
     flex-grow: 1;
     background:#f2f2f2;
     .main-item_hot-title{
@@ -219,15 +227,16 @@ a{
     }
 }
 
-.main-item_hot{
+.app-header{
     position: relative;
     .main-citiesSimple{
        height:0;
        width:100%;
        background-color: rgba($color: #000000, $alpha: 0.7);
        position: absolute;
-       top:0;
+       top: 2.4rem;
        left:0;
+       z-index: 999;
        color:#fff;
        overflow: hidden;
        transition: all 0.6s;
