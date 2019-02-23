@@ -17,5 +17,8 @@
     "gulp-webserver": "^0.9.1",
     "string-loader": "^0.0.1",
     "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "swiper": "^4.4.6"
   }
 }

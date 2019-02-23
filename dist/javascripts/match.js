@@ -115,7 +115,7 @@ eval("// 整个应用程序的控制器，其中有一个任务就是将app应�
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\r\nconst { getFilmsList,getTestMock} = __webpack_require__(/*! ../../models/match/app-main-model */ \"./src/javascripts/models/match/app-main-model.js\")\r\nconst appMainView = __webpack_require__(/*! ../../views/match/app-main.html */ \"./src/javascripts/views/match/app-main.html\") \r\nconst render = async () => {\r\n    // 渲染首页的电影列表\r\n    // let filmsList = await getFilmsList()\r\n    let template = Handlebars.compile(appMainView)\r\n    let mock = await getTestMock()\r\n    $('#app #main').html(template({ mock: mock }))\r\n    console.log(mock.setRequestHeader,mock)\r\n}\r\n\r\nmodule.exports = { render }\n\n//# sourceURL=webpack:///./src/javascripts/controllers/match/app-main-controller.js?");
+eval("\r\nconst { getFilmsList,getTestMock} = __webpack_require__(/*! ../../models/match/app-main-model */ \"./src/javascripts/models/match/app-main-model.js\")\r\nconst appMainView = __webpack_require__(/*! ../../views/match/app-main.html */ \"./src/javascripts/views/match/app-main.html\") \r\nconst render = async () => {\r\n    // 渲染首页的电影列表\r\n    // let filmsList = await getFilmsList()\r\n    let template = Handlebars.compile(appMainView)\r\n    let mock = await getTestMock()\r\n    $('#app #main').html(template({ mock: mock }))\r\n}\r\n\r\nmodule.exports = { render }\n\n//# sourceURL=webpack:///./src/javascripts/controllers/match/app-main-controller.js?");
 
 /***/ }),
 
