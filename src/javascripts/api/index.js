@@ -8,6 +8,7 @@ const api = {
             data: data || {},
             methods: methods || 'get',
             success: (res) => {
+               
                 return res
             },
             error: (error) => {

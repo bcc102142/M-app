@@ -7,7 +7,9 @@
     "static": "gulp copy-static",
     "mock": "json-server ./src/static/mock/mock.json --port 5000 " ,
     "mockdata": "json-server ./src/static/mock/data.json --port 4000 " ,
-    "start": "concurrently \"gulp\" \"npm run mock\" \"npm run mockdata\""
+    "activityPageTwo": "json-server ./src/static/mock/activityPageTwo.json --port 4001 " ,
+    "activityPageThree": "json-server ./src/static/mock/activityPageThree.json --port 4002 " ,
+    "start": "concurrently \"gulp\" \"npm run mock\" \"npm run mockdata\" \"npm run activityPageTwo\" \"npm run activityPageThree\""
   },
   "author": "",
   "license": "ISC",
