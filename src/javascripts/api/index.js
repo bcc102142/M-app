@@ -4,7 +4,7 @@ const api = {
         url, data, methods
     }, mock) {
         return $.ajax({
-            url: (mock ? '' : '/zhanku' ) + url,
+            url: (mock ? '' : '/myzhanku' ) + url,
             data: data || {},
             methods: methods || 'get',
             success: (res) => {

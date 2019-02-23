@@ -9,7 +9,7 @@ const serverConfig = {
     port: 3000,
     proxies: [ // 让开发服务器去请求猫眼数据
         {
-            source: '/zhanku', // 暗号
+            source: '/myzhanku', // 暗号
             target: 'https://api.zcool.com.cn/', // 真正的目标
         },
         {
