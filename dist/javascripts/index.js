@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("// 封装api是为了统一处理跨域路径 还有 对请求回来的数据的处理\r\nconst api = {\r\n    request ({\r\n        url, data, methods\r\n    }, mock) {\r\n        return $.ajax({\r\n            // url: 'http://m.maoyan.com/ajax/movieOnInfoList?token=',\r\n            url: (mock ? '' : '/maoyan' ) + url,\r\n            data: data || {},\r\n            methods: methods || 'get',\r\n            success: (res) => {\r\n                return res\r\n            },\r\n            error: (error) => {\r\n                console.log('请求出错了', error)\r\n            }\r\n        }) \r\n    },\r\n    mock (options) {\r\n        return this.request(options, true)\r\n    }\r\n}\r\n\r\nmodule.exports = api\n\n//# sourceURL=webpack:///./src/javascripts/api/index.js?");
+eval("// 封装api是为了统一处理跨域路径 还有 对请求回来的数据的处理\r\nconst api = {\r\n    request ({\r\n        url, data, methods\r\n    }, mock) {\r\n        return $.ajax({\r\n            url: (mock ? '' : '/zhanku' ) + url,\r\n            data: data || {},\r\n            methods: methods || 'get',\r\n            success: (res) => {\r\n                return res\r\n            },\r\n            error: (error) => {\r\n                console.log('请求出错了', error)\r\n            }\r\n        }) \r\n    },\r\n    mock (options) {\r\n        return this.request(options, true)\r\n    }\r\n}\r\n\r\nmodule.exports = api\n\n//# sourceURL=webpack:///./src/javascripts/api/index.js?");
 
 /***/ }),
 
@@ -115,7 +115,7 @@ eval("// 整个应用程序的控制器，其中有一个任务就是将app应�
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\r\nconst { getFilmsList } = __webpack_require__(/*! ../../models/index/app-main-model */ \"./src/javascripts/models/index/app-main-model.js\")\r\nconst appMainView = __webpack_require__(/*! ../../views/index/app-main.html */ \"./src/javascripts/views/index/app-main.html\") \r\n// const render = () => {\r\n//     let appMainView = require('../../views/index/app-main.html') \r\n           \r\n//     getFilmsList((data) => { // 获取了model的数据\r\n\r\n//         console.log(data.data)\r\n//         let template = Handlebars.compile(appMainView)\r\n//         $('#app #main').html(template({ films: data.data.content }))//传入了ajax数据的对象\r\n//     })\r\n\r\n// }\r\n\r\nconst render = async () => {\r\n  \r\n    // 渲染首页的电影列表\r\n   \r\n    let data = await getFilmsList()\r\n    console.log(data.data)\r\n    let template = Handlebars.compile(appMainView)\r\n    $('#app #main').html(template({ data: data.data.content }))\r\n\r\n}\r\nmodule.exports = { render }\r\n\r\n\r\n\r\n\r\n// const { getFilmsList} = require('../../models/activity/app-main-model')\r\n\r\n// const render = async () => {\r\n//     //渲染首页的电影列表\r\n//     let appMainView = require('../../views/index/app-main.html') \r\n//     let filmsList = await getFilmsList()\r\n//     let template = Handlebars.compile(appMainView)\r\n//     $('#app #main').html(template({ films: filmsList.movieList }))\r\n// }\r\n\r\n// module.exports = { render }\n\n//# sourceURL=webpack:///./src/javascripts/controllers/index/app-main-controller.js?");
+eval("\r\nconst { getFilmsList } = __webpack_require__(/*! ../../models/index/app-main-model */ \"./src/javascripts/models/index/app-main-model.js\")\r\nconst appMainView = __webpack_require__(/*! ../../views/index/app-main.html */ \"./src/javascripts/views/index/app-main.html\") \r\n\r\nconst render = async () => {\r\n\r\n    let data = await getFilmsList()\r\n    console.log(data.data)\r\n    let template = Handlebars.compile(appMainView)\r\n    $('#app #main').html(template({ data: data.data.content }))\r\n\r\n}\r\nmodule.exports = { render }\n\n//# sourceURL=webpack:///./src/javascripts/controllers/index/app-main-controller.js?");
 
 /***/ }),
 
@@ -137,7 +137,7 @@ eval("\r\nconst appController = __webpack_require__(/*! ./controllers/index/app-
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const api = __webpack_require__(/*! ../../api */ \"./src/javascripts/api/index.js\")\r\n// 获取电影\r\n// const getFilmsList = (callback) => {\r\n//     api.request({\r\n        \r\n//         url: '/v2/api//discoverListNew?contentType=0&p=1&ps=10&recommendLevel=3',\r\n//         success: (data) => {\r\n//             callback(data)\r\n//         }\r\n//     })\r\n// }\r\n\r\n\r\nconst getFilmsList = () => {\r\n    return api.request({ url: '/v2/api//discoverListNew?contentType=0&p=1&ps=10&recommendLevel=3' })\r\n}\r\n\r\nmodule.exports = {\r\n    getFilmsList\r\n}\n\n//# sourceURL=webpack:///./src/javascripts/models/index/app-main-model.js?");
+eval("const api = __webpack_require__(/*! ../../api */ \"./src/javascripts/api/index.js\")\r\n\r\nconst getFilmsList = () => {\r\n    return api.request({ url: '/v2/api//discoverListNew?contentType=0&p=1&ps=10&recommendLevel=3' })\r\n}\r\n\r\nmodule.exports = {\r\n    getFilmsList\r\n}\n\n//# sourceURL=webpack:///./src/javascripts/models/index/app-main-model.js?");
 
 /***/ }),
 

@@ -4,8 +4,7 @@ const api = {
         url, data, methods
     }, mock) {
         return $.ajax({
-            // url: 'http://m.maoyan.com/ajax/movieOnInfoList?token=',
-            url: (mock ? '' : '/maoyan' ) + url,
+            url: (mock ? '' : '/zhanku' ) + url,
             data: data || {},
             methods: methods || 'get',
             success: (res) => {

@@ -31,8 +31,7 @@ const render = () => {
     })
     //head菜单返回首页
     $(".returnHome").on("click",function (e) {
-        console.log("111")
-        location.href='http://localhost:3000';
+        location.href='/';
     })
     // 渲染主体区域
     appMainController.render()
