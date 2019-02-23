@@ -129,7 +129,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var dom7
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\r\nconst Swiper=__webpack_require__(/*! swiper */ \"./node_modules/swiper/dist/js/swiper.esm.bundle.js\").default;\r\nconst movieBanner=__webpack_require__(/*! ../../views/movie/movie-banner.html */ \"./src/javascripts/views/movie/movie-banner.html\");\r\nconst movieHeader=__webpack_require__(/*! ../../views/movie/movie-header.html */ \"./src/javascripts/views/movie/movie-header.html\");\r\nconst movieMain=__webpack_require__(/*! ../../views/movie/movie-main.html */ \"./src/javascripts/views/movie/movie-main.html\");\r\nconst movieFooter=__webpack_require__(/*! ../../views/movie/movie-footer.html */ \"./src/javascripts/views/movie/movie-footer.html\");\r\n\r\n\r\n const render=()=>{\r\n    $('#header').html(movieHeader);\r\n    $('#main').html(movieMain);\r\n    $('.movie-main_banner').html(movieBanner);\r\n    $('#footer').html(movieFooter);\r\n      var mySwiper = new Swiper ('.swiper-container', {\r\n        autoplay:true,//自动播放\r\n        loop:true,//自动循环\r\n        // 如果需要分页器\r\n        pagination: {\r\n          el: '.swiper-pagination',\r\n        }\r\n      })   \r\n     \r\n }\r\n module.exports={\r\n     render\r\n }\r\n\n\n//# sourceURL=webpack:///./src/javascripts/controllers/movie/movie-controller.js?");
+eval("const Swiper=__webpack_require__(/*! swiper */ \"./node_modules/swiper/dist/js/swiper.esm.bundle.js\").default;\r\nconst movieBanner=__webpack_require__(/*! ../../views/movie/movie-banner.html */ \"./src/javascripts/views/movie/movie-banner.html\");\r\nconst movieHeader=__webpack_require__(/*! ../../views/movie/movie-header.html */ \"./src/javascripts/views/movie/movie-header.html\");\r\nconst movieMain=__webpack_require__(/*! ../../views/movie/movie-main.html */ \"./src/javascripts/views/movie/movie-main.html\");\r\nconst movieFooter=__webpack_require__(/*! ../../views/movie/movie-footer.html */ \"./src/javascripts/views/movie/movie-footer.html\");\r\n\r\n\r\n const render=()=>{\r\n   console.log(Swiper);\r\n    $('#header').html(movieHeader);\r\n    $('#main').html(movieMain);\r\n    $('.movie-main_banner').html(movieBanner);\r\n    $('#footer').html(movieFooter);\r\n      var mySwiper = new Swiper ('.swiper-container', {\r\n        autoplay:true,//自动播放\r\n        loop:true,//自动循环\r\n        // 如果需要分页器\r\n        pagination: {\r\n          el: '.swiper-pagination',\r\n        }\r\n      })   \r\n }\r\n\r\n module.exports={\r\n     render\r\n }\r\n\n\n//# sourceURL=webpack:///./src/javascripts/controllers/movie/movie-controller.js?");
 
 /***/ }),
 
@@ -173,7 +173,7 @@ eval("module.exports = \"<footer class=\\\"movie-footer\\\">    <p class=\\\"mov
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<header class=\\\"movie-header\\\">    <a href=\\\"#\\\"></a>    <a href=\\\"#\\\"><img src=\\\"/static/images/logo.svg\\\" alt=\\\"\\\"></a>    <a href=\\\"#\\\"></a></header>\"\n\n//# sourceURL=webpack:///./src/javascripts/views/movie/movie-header.html?");
+eval("module.exports = \"<header class=\\\"movie-header\\\">    <a href=\\\"/movieFriends.html\\\"></a>    <a href=\\\"#\\\"><img src=\\\"/static/images/logo.svg\\\" alt=\\\"\\\"></a>    <a href=\\\"#\\\"></a>    <a href=\\\"#\\\"></a></header>\"\n\n//# sourceURL=webpack:///./src/javascripts/views/movie/movie-header.html?");
 
 /***/ }),
 

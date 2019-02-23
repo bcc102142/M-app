@@ -1,4 +1,3 @@
-
 const Swiper=require('swiper').default;
 const movieBanner=require('../../views/movie/movie-banner.html');
 const movieHeader=require('../../views/movie/movie-header.html');
@@ -7,6 +6,7 @@ const movieFooter=require('../../views/movie/movie-footer.html');
 
 
  const render=()=>{
+   console.log(Swiper);
     $('#header').html(movieHeader);
     $('#main').html(movieMain);
     $('.movie-main_banner').html(movieBanner);
@@ -19,8 +19,8 @@ const movieFooter=require('../../views/movie/movie-footer.html');
           el: '.swiper-pagination',
         }
       })   
-     
  }
+
  module.exports={
      render
  }
