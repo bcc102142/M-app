@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "gulp",
-    "static": "gulp copy-static"
+    "static": "gulp copy-static",
+    "mock": "json-server ./src/static/mock/mock.json --port 5000 " ,
+    "mockdata": "json-server ./src/static/mock/data.json --port 4000 " ,
+    "start": "concurrently \"gulp\" \"npm run mock\" \"npm run mockdata\""
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "del": "^3.0.0",
     "gulp": "3.9.1",
     "gulp-sass": "^4.0.2",

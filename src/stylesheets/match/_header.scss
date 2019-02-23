@@ -52,13 +52,13 @@ html, body, #app { height: 100%; }
 .header-right-nav-son{
     position: absolute;
     background: white;
-    height: 160px;
+    height: 0;
+    overflow: hidden;
     width: 10rem;
-    left: -340px;
-    top: 13px;
+    left: -9.066667rem;
+    top: .346667rem;
     z-index: 1;
-    display: none;
-    transition: all 1s;
+   
 }
 .header-right-nav-son div:nth-of-type(1) {
     position: relative;

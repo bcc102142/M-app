@@ -19,11 +19,20 @@ const render = () => {
         bool=!bool;
         if(bool){
             $('.header-right-nav-img').attr("src","../../../static/images/关闭.png")
-            $('.header-right-nav-son').show()
+            $(".header-right-nav-son").animate({
+                height: '4.2rem',
+                }, 300)
         }else{
             $('.header-right-nav-img').attr("src","../../../static/images/菜单.png")
-            $('.header-right-nav-son').hide()
+            $(".header-right-nav-son").animate({
+                height: '0rem',
+                }, 300)
         }
+    })
+    //head菜单返回首页
+    $(".returnHome").on("click",function (e) {
+        console.log("111")
+        location.href='http://localhost:3000';
     })
     // 渲染主体区域
     appMainController.render()

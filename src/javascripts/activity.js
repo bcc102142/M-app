@@ -1,3 +1,5 @@
 const appController = require('./controllers/activity/app-controller')
 
-appController.render()
+setTimeout(function(){
+    appController.render()
+},200)

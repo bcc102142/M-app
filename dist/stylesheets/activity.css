@@ -205,14 +205,11 @@ html, body, #app {
 
 #header {
   width: 100%;
-  height: 50px;
-  padding: 0 15px;
+  height: 1.333333rem;
+  padding: 0 .4rem;
   background: #FFD100;
-  font-size: 18px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  font-size: .48rem;
+  color: #fff; }
 
 #app-header {
   width: 100%;
@@ -227,7 +224,7 @@ html, body, #app {
 
 .header-right {
   width: 3.2rem;
-  height: 24px; }
+  height: .64rem; }
 
 .header-right-button {
   width: 2.08rem;
@@ -248,62 +245,61 @@ html, body, #app {
   width: .64rem;
   height: .64rem;
   position: absolute;
-  top: -23px; }
+  top: -0.613333rem; }
 
 .header-right-nav-son {
   position: absolute;
   background: white;
-  height: 160px;
+  height: 0;
+  overflow: hidden;
   width: 10rem;
-  left: -340px;
-  top: 13px;
-  z-index: 1;
-  display: none;
-  transition: all 1s; }
+  left: -9.066667rem;
+  top: .346667rem;
+  z-index: 1; }
 
 .header-right-nav-son div:nth-of-type(1) {
   position: relative;
   border-bottom: 1px solid #eeeeee;
-  width: 340px;
-  height: 48px;
-  padding: 15px 15px;
-  margin-left: 15px; }
+  width: 9.066667rem;
+  height: 1.28rem;
+  padding: .4rem .4rem;
+  margin-left: .4rem; }
 
 #app-header .header-right .header-right-nav-son div:nth-of-type(1) img {
-  width: 16px;
-  height: 16px;
+  width: .426667rem;
+  height: .426667rem;
   position: absolute;
-  left: 15px;
-  top: 15px; }
+  left: .4rem;
+  top: .4rem; }
 
 #app-header .header-right .header-right-nav-son div:nth-of-type(1) p {
-  font-size: 14px;
+  font-size: .373333rem;
   margin: 0;
   position: absolute;
-  top: 13px;
-  left: 38px; }
+  top: .346667rem;
+  left: 1.013333rem; }
 
 .header-right-nav-son div:nth-of-type(2) {
   position: relative;
   border-bottom: 1px solid #eeeeee;
-  width: 340px;
-  height: 48px;
-  padding: 15px 15px;
-  margin-left: 15px; }
+  width: 9.066667rem;
+  height: 1.28rem;
+  padding: .4rem .4rem;
+  margin-left: .4rem; }
 
 #app-header .header-right .header-right-nav-son div:nth-of-type(2) img {
-  width: 16px;
-  height: 16px;
+  width: .426667rem;
+  height: .426667rem;
   position: absolute;
-  left: 15px;
-  top: 15px; }
+  left: .4rem;
+  top: .4rem; }
 
 #app-header .header-right .header-right-nav-son div:nth-of-type(2) p {
-  font-size: 14px;
+  font-size: .373333rem;
   margin: 0;
   position: absolute;
-  top: 13px;
-  left: 38px; }
+  top: .346667rem;
+  left: 1.013333rem; }
 
 .header-right-nav-son div:nth-of-type(2) p span {
   padding: 0 5px; }
@@ -311,24 +307,24 @@ html, body, #app {
 .header-right-nav-son div:nth-of-type(3) {
   position: relative;
   border-bottom: 1px solid #eeeeee;
-  width: 340px;
-  height: 48px;
-  padding: 15px 15px;
-  margin-left: 15px; }
+  width: 9.066667rem;
+  height: 1.28rem;
+  padding: .4rem .4rem;
+  margin-left: .4rem; }
 
 #app-header .header-right .header-right-nav-son div:nth-of-type(3) img {
-  width: 16px;
-  height: 16px;
+  width: .426667rem;
+  height: .426667rem;
   position: absolute;
-  left: 15px;
-  top: 15px; }
+  left: .4rem;
+  top: .4rem; }
 
 #app-header .header-right .header-right-nav-son div:nth-of-type(3) p {
-  font-size: 14px;
+  font-size: .373333rem;
   margin: 0;
   position: absolute;
-  top: 13px;
-  left: 38px; }
+  top: .346667rem;
+  left: 1.013333rem; }
 
 .header-right-nav-son div:nth-of-type(3) p span {
   padding: 0 5px; }
@@ -370,19 +366,19 @@ li {
 .footer-bottom ul:nth-of-type(2) {
   float: right; }
 
-.Copyright {
+.copyright {
   text-align: center;
   color: #999999;
   font-size: .346667rem;
   margin-top: .693333rem;
   /*border-top: 1px solid #333333;*/ }
 
-.Copyright:before {
+.copyright:before {
   content: "";
   position: absolute;
   height: 1px;
   background: #eeeeee;
-  width: 100%;
+  width: 9.6rem;
   transform: scale(1, 0.5);
   display: block; }
 
@@ -395,19 +391,19 @@ li {
   background: #eeeeee; }
 
 .main-item {
-  padding: 10px 15px;
+  padding: .266667rem .4rem;
   width: 100%;
-  height: 140px;
+  height: 3.733333rem;
   background: #eeeeee; }
 
 .main-item img {
-  width: 158px;
-  height: 120px;
+  width: 4.213333rem;
+  height: 3.2rem;
   border-radius: 5px; }
 
 .main-item-right {
-  width: 186px;
-  height: 120px;
+  width: 4.96rem;
+  height: 3.2rem;
   padding: 10px 0 10px 10px;
   float: right;
   display: flex;
@@ -419,17 +415,17 @@ li {
   color: #999999; }
 
 .main-item-right-top {
-  font-size: 16px;
+  font-size: .426667rem;
   font-weight: bold;
   color: #333; }
 
 .main-more {
-  height: 38px;
-  width: 355px;
+  height: 1.013333rem;
+  width: 9.466667rem;
   display: block;
   text-align: center;
   background: white;
   color: #666666;
-  line-height: 38px;
+  line-height: 1.013333rem;
   border-radius: .11rem;
   margin: 10px; }

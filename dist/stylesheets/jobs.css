@@ -271,7 +271,7 @@ body {
     display: flex;
     padding-right: .266667rem; }
     .main-item_search .main-item_search-city span {
-      font-size: .426667rem; }
+      font-size: .4rem; }
     .main-item_search .main-item_search-city i {
       width: .266667rem;
       background-image: url("/static/images/city-icon.png");

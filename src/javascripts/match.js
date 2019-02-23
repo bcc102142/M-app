@@ -1,3 +1,5 @@
 const appController = require('./controllers/match/app-controller')
 
-appController.render()
+setTimeout(function(){
+    appController.render()
+},200)

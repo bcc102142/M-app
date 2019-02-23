@@ -39,14 +39,14 @@
 .footer-bottom ul:nth-of-type(2){
     float: right;
 }
-.Copyright{
+.footer-bottom-c{
     text-align: center;
     color: #999999;
     font-size: .346667rem;
     margin-top: .693333rem;
     /*border-top: 1px solid #333333;*/
 }
-.Copyright:before{
+.footer-bottom-c:before{
     content: "";
     position: absolute;
     height: 1px;
