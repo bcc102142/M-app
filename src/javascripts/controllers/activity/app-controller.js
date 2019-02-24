@@ -33,6 +33,10 @@ const render = () => {
     $(".returnHome").on("click",function (e) {
         location.href='/';
     })
+    //菜单跳转注册
+    $(".returnRegister").on("click",function (e) {
+        location.href='/register.html';
+    })
     // 渲染主体区域
     appMainController.render()
         

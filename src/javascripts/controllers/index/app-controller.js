@@ -29,6 +29,10 @@ const render = () => {
                 }, 300)
         }
     })
+    //登陆注册能点击了（0.0）
+    $(".returnRegister").on("click",function (e) {
+        location.href='/register.html';
+    })
     // 渲染主体区域
     appMainController.render()
         

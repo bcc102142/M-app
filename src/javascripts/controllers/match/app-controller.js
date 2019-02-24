@@ -33,6 +33,13 @@ const render = () => {
     $(".returnHome").on("click",function (e) {
         location.href='/';
     })
+    //头部点击事件
+    $(".returnHome").on("click",function (e) {
+        location.href='/';
+    })
+    $(".returnRegister").on("click",function (e) {
+        location.href='/register.html';
+    })
     // 渲染主体区域
     appMainController.render()
         

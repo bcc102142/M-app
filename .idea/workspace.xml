@@ -2,77 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="676154fe-d0a7-4a07-ab1f-93844a23376c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/javascripts/movie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/movie.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/movieFriends.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/static/images/facture-icon.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/static/images/facture-icon1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/static/images/facture-icon2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/static/images/facture-icon3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/static/images/footer-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/static/images/footer-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/static/images/gotop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/static/images/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/static/images/movie-header-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/static/images/movie-header-icon1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/static/images/movie-header-icon2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/static/images/movie-main_feature-img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/static/images/movie-main_feature-img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/static/images/movie-main_feature-img2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/static/images/movieFriends-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/static/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/static/mock/movieBanner.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/static/stylesheets/swiper.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/stylesheets/movie.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/movieBanner.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javascripts/controllers/movie/movie-controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javascripts/controllers/movie/movieBanner-controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javascripts/controllers/movie/movieFriends-controller.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javascripts/models/movie/movie-bannerModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javascripts/movie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javascripts/views/movie/movie-banner.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javascripts/views/movie/movie-footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javascripts/views/movie/movie-header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/javascripts/views/movie/movie-main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/movie.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/movieFriends.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/facture-icon.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/facture-icon1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/facture-icon2.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/facture-icon3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/footer-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/footer-logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/gotop.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/movie-header-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/movie-header-icon1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/movie-header-icon2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/movie-main_feature-img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/movie-main_feature-img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/movie-main_feature-img2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/movieFriends-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/mock/movieBanner.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/static/stylesheets/swiper.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stylesheets/movie.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/javascripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/javascripts/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/javascripts/jobs.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/javascripts/jobs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/javascripts/match.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/javascripts/match.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/jobs.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/jobs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/stylesheets/activity.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/stylesheets/activity.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/stylesheets/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/stylesheets/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/stylesheets/jobs.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/stylesheets/jobs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/stylesheets/match.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/stylesheets/match.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javascripts/controllers/jobs/jobsHeader-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/javascripts/controllers/jobs/jobsHeader-controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javascripts/controllers/match/app-main-controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/javascripts/controllers/match/app-main-controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javascripts/views/index/app-nav.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/javascripts/views/index/app-nav.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jobs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/jobs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/jobs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/jobs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stylesheets/modules/reset/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheets/modules/reset/_reset.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -89,13 +19,8 @@
       <file leaf-file-name="testlogin.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../../0223-项目最终打包/testlogin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="311" lean-forward="true" selection-start-line="311" selection-end-line="311" />
-              <folding>
-                <element signature="e#4115#4327#0" />
-                <element signature="e#4360#4701#0" />
-                <element signature="e#4731#4874#0" />
-              </folding>
+            <state relative-caret-position="205">
+              <caret line="311" column="45" selection-start-line="311" selection-start-column="45" selection-end-line="311" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -143,11 +68,11 @@
       <path value="$PROJECT_DIR$/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="118" />
-    <option name="y" value="17" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="117" />
+    <option name="y" value="16" />
     <option name="width" value="1730" />
-    <option name="height" value="973" />
+    <option name="height" value="974" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -202,15 +127,16 @@
       <updated>1550623568681</updated>
       <workItem from="1550623571122" duration="1302000" />
       <workItem from="1550707676300" duration="23364000" />
-      <workItem from="1550916880758" duration="11071000" />
+      <workItem from="1550916880758" duration="11685000" />
+      <workItem from="1551007479560" duration="684000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35737000" />
+    <option name="totallyTimeSpent" value="37035000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="95" y="14" width="1384" height="778" extended-state="0" />
+    <frame x="94" y="13" width="1384" height="779" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" order="2" side_tool="true" />
@@ -246,40 +172,15 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test1.html">
+    <entry file="file://$PROJECT_DIR$/../../0223-项目最终打包/testlogin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7590">
-          <caret line="253" column="27" lean-forward="true" selection-start-line="253" selection-start-column="27" selection-end-line="253" selection-end-column="27" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#1;n#ul#1;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#10638#13175#0" />
-          </folding>
+        <state relative-caret-position="9210">
+          <caret line="307" lean-forward="true" selection-start-line="307" selection-end-line="307" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3030">
-          <caret line="101" column="19" selection-end-line="412" selection-end-column="7" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test1.html" />
+    <entry file="file://$PROJECT_DIR$/test.html" />
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -318,37 +219,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="55260">
           <caret line="1842" column="17" selection-start-line="1842" selection-start-column="17" selection-end-line="1842" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3030">
-          <caret line="101" column="19" selection-end-line="412" selection-end-column="7" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html" />
     <entry file="file://$PROJECT_DIR$/test1.html" />
     <entry file="file://$PROJECT_DIR$/../../0223-项目最终打包/testlogin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="311" lean-forward="true" selection-start-line="311" selection-end-line="311" />
-          <folding>
-            <element signature="e#4115#4327#0" />
-            <element signature="e#4360#4701#0" />
-            <element signature="e#4731#4874#0" />
-          </folding>
+        <state relative-caret-position="205">
+          <caret line="311" column="45" selection-start-line="311" selection-start-column="45" selection-end-line="311" selection-end-column="45" />
         </state>
       </provider>
     </entry>
