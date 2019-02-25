@@ -6,7 +6,8 @@ const webpackConfig = {
         index: path.join(__dirname, '../src/javascripts/index.js'),
         activity: path.join(__dirname, '../src/javascripts/activity.js'),
         match: path.join(__dirname, '../src/javascripts/match.js'),
-        jobs: path.join(__dirname, '../src/javascripts/jobs.js')
+        jobs: path.join(__dirname, '../src/javascripts/jobs.js'),
+        movie: path.join(__dirname, '../src/javascripts/movie.js'),
 
     },
     output: { // 出口

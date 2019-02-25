@@ -18,6 +18,7 @@ function init() {
         $('.header-icon i').removeClass('clickIcon');
         clickBool = !clickBool;
     });
+  
 }
 
 function clickHandler(e) {

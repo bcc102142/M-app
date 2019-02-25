@@ -4,10 +4,14 @@ const appMainView = require('../../views/match/app-main.html')
 const render = async () => {
     let template = Handlebars.compile(appMainView)
     let mock = await getTestMock()
+<<<<<<< HEAD
     console.log(dataChange(mock))
     let data=dataChange(mock)
     $('#app #main').html(template({data:data}))
     
+=======
+    $('#app #main').html(template({ mock: mock }))
+>>>>>>> 704e507846f953d086b3d28fd45d9955e60c9b1f
 }
 const dataChange = function(data){
     

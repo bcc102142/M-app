@@ -115,7 +115,11 @@ eval("// 整个应用程序的控制器，其中有一个任务就是将app应�
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
+<<<<<<< HEAD
 eval("\r\nconst {getTestMock} = __webpack_require__(/*! ../../models/match/app-main-model */ \"./src/javascripts/models/match/app-main-model.js\")\r\nconst appMainView = __webpack_require__(/*! ../../views/match/app-main.html */ \"./src/javascripts/views/match/app-main.html\") \r\nconst render = async () => {\r\n    let template = Handlebars.compile(appMainView)\r\n    let mock = await getTestMock()\r\n    console.log(dataChange(mock))\r\n    let data=dataChange(mock)\r\n    $('#app #main').html(template({data:data}))\r\n    \r\n}\r\nconst dataChange = function(data){\r\n    \r\n    for (let index = 0; index < data.length; index++) {\r\n        let day=data[index].residueDay;\r\n        // data[index].residueDay=data[index].isEnd ? \"已结束\" : day;\r\n\r\n        if(data[index].isEnd){\r\n            data[index].text = \"已结束\";\r\n        }else{\r\n            data[index].text = `剩余<span>${day}</span>天`;\r\n        }\r\n    }\r\n    return data\r\n}\r\nmodule.exports = { render }\n\n//# sourceURL=webpack:///./src/javascripts/controllers/match/app-main-controller.js?");
+=======
+eval("\r\nconst { getFilmsList,getTestMock} = __webpack_require__(/*! ../../models/match/app-main-model */ \"./src/javascripts/models/match/app-main-model.js\")\r\nconst appMainView = __webpack_require__(/*! ../../views/match/app-main.html */ \"./src/javascripts/views/match/app-main.html\") \r\nconst render = async () => {\r\n    // 渲染首页的电影列表\r\n    // let filmsList = await getFilmsList()\r\n    let template = Handlebars.compile(appMainView)\r\n    let mock = await getTestMock()\r\n    $('#app #main').html(template({ mock: mock }))\r\n}\r\n\r\nmodule.exports = { render }\n\n//# sourceURL=webpack:///./src/javascripts/controllers/match/app-main-controller.js?");
+>>>>>>> 704e507846f953d086b3d28fd45d9955e60c9b1f
 
 /***/ }),
 
