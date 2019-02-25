@@ -162,7 +162,7 @@ eval("module.exports = \"<div class=\\\"swiper-container\\\">    <div class=\\\"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"<footer class=\\\"movie-footer\\\">    <p class=\\\"movie-footer_phone\\\">客服热线：400-6066-100</p>    <a href=\\\"\\\" class=\\\"movie-footer_btn\\\"><span></span><span>拨打客服热线</span></a>    <p class=\\\"movie-footer_login\\\"><a href=\\\"\\\">登录</a>&nbsp;|&nbsp;<a href=\\\"\\\">注册</a></p>    <div class=\\\"movie-footer_logo\\\">        <img src=\\\"/static/images/footer-logo.svg\\\" alt=\\\"\\\">    </div></footer>\"\n\n//# sourceURL=webpack:///./src/javascripts/views/movie/movie-footer.html?");
+eval("module.exports = \"<footer class=\\\"movie-footer\\\">    <p class=\\\"movie-footer_phone\\\">客服热线：400-6066-100</p>    <a href=\\\"\\\" class=\\\"movie-footer_btn\\\"><span></span><span>拨打客服热线</span></a>    <p class=\\\"movie-footer_login\\\"><a href=\\\"/normalLogin.html\\\">登录</a>&nbsp;|&nbsp;<a href=\\\"/register.html\\\">注册</a></p>    <div class=\\\"movie-footer_logo\\\">        <img src=\\\"/static/images/footer-logo.svg\\\" alt=\\\"\\\">    </div></footer>\"\n\n//# sourceURL=webpack:///./src/javascripts/views/movie/movie-footer.html?");
 
 /***/ }),
 
