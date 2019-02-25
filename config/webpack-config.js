@@ -10,6 +10,7 @@ const webpackConfig = {
         movie: path.join(__dirname, '../src/javascripts/movie.js'),
         register: path.join(__dirname, '../src/javascripts/register.js'),
         normalLogin: path.join(__dirname, '../src/javascripts/normalLogin.js'),
+
     },
     output: { // 出口
         filename: '[name].js' // 如果配置的什么名字，就输出什么名字
