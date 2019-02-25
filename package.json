@@ -24,6 +24,7 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "swiper": "^4.4.6"
+    "swiper": "^4.4.6",
+    "better-scroll": "^1.14.1"
   }
 }

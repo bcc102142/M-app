@@ -8,7 +8,7 @@ let clickBool=false;
 
 const render = () => {
     $('#header').append(jobsHeader);
-
+    init();
 }
 function init() {
     let headerIcon = document.querySelector('.header-icon');
@@ -32,12 +32,14 @@ function clickHandler(e) {
     } else {
         $('#app').removeClass('app-move');
         $('.header-icon i').removeClass('clickIcon');
-
+       setTimeout(()=>{
+        $('#app-aside').hide();
+       },500)
+      
     }
     clickBool=!clickBool;
 
 }
 module.exports = {
-    render,
-    init
+    render
 }
